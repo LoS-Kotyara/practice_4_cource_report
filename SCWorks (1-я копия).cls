@@ -318,9 +318,9 @@
 \setlength{\abovecaptionskip}{1ex}
 
 \captionsetup[figure]{name=\CYRR\cyri\cyrs\cyru\cyrn\cyro\cyrk, labelsep=endash,
-                justification=centering, font={normalsize}, skip=\abovecaptionskip, position=below}
+                justification=centering, font={small}, skip=\abovecaptionskip, position=below}
 \captionsetup[table]{name=\CYRT\cyra\cyrb\cyrl\cyri\cyrc\cyra, labelsep=endash, format=plain,
-                justification=RaggedRight, singlelinecheck=false, font={normalsize}, position=top}
+                justification=RaggedRight, singlelinecheck=false, font={small}, position=top}
 
 % --------------------------------------------------------------------------%
 % Table of contents
