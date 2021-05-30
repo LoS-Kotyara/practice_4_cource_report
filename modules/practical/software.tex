@@ -104,9 +104,27 @@ arecordProcess.stdout.pipe(aplayProcess.stdin);
 
 \lstinputlisting[style=ES6, caption={Пример скрипта, запускающего анимацию переливания цветов на светодиодной ленте}, label={lst:node__rainbow}, linerange={19-29, 33-48}, consecutivenumbers=true]{assets/listings/practical/rainbow.js}
 
+Пример работы эффекта переливания представлен на рисунке~\ref{img:ws2812__rainbow}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{assets/images/practical/Эффект переливания.jpg}
+  \caption{Эффект переливания}
+  \label{img:ws2812__rainbow}
+\end{figure}
+
 В случае, если необходимо, чтобы цвета выходили из центра светодиодной ленты и расходились в стороны, тогда скрипт будет выглядеть, как показано в листинге~\ref{lst:node__shift}. Предполагается, что число светодиодов в ленте чётное.
 
 \lstinputlisting[style=ES6, caption={Пример функции, запускающего анимацию выхода цвета из центра светодиодной ленты в стороны}, label={lst:node__shift}, linerange={23-39}, consecutivenumbers=true]{assets/listings/practical/LED.js}
+
+Пример работы эффекта выхода цветов из середины ленты представлен на рисунке~\ref{img:ws2812__shift}.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{assets/images/practical/Эффект из центра.jpg}
+  \caption{Эффект выхода цветов из середины ленты}
+  \label{img:ws2812__shift}
+\end{figure}
 
 В этой функции на вход поступают массив, описывающий светодиоды в ленте, и новый цвет, который необходимо отобразить начиная с центра. Сначала находится индекс центрального элемента, затем смещаются на один влево/вправо цвета светодиодов, и добавляется новый цвет. Возвращаемым значением является новое состояние светодиодной ленты.
 
@@ -129,7 +147,7 @@ arecordProcess.stdout.pipe(aplayProcess.stdin);
   \item Параллельно этому процессу, каждый интервал времени t2 получается значение максимального элемента max, это значение переводится в цветовое представление, и значение максимального элемента становится равным -1.
 \end{itemize}
 
-Фрагмент функции обработки звукового потока представлена в листинге~\ref{lst:node__signalProcessing}.
+Фрагмент функции обработки звукового потока представлен в листинге~\ref{lst:node__signalProcessing}.
 
 \lstinputlisting[style=ES6, caption={Фрагмент функции обработки звукового потока}, label={lst:node__signalProcessing}, linerange={48-68}, consecutivenumbers=true]{assets/listings/practical/index.js}
 
